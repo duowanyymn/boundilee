@@ -671,7 +671,7 @@ services:
     image: ${GRAFANA_IMG:-grafana/grafana:11.0.0}
     restart: unless-stopped
     ports:
-     - '3100:3100'
+     - '3100:3000'
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
